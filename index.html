@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#060f26">
+  <meta name="description" content="Álisson Santana, estudante de Engenharia de Computação no IME. Software, automação e experimentos em uma interface de pixels e bits." data-en-content="Álisson Santana, Computer Engineering student at IME. Software, automation and experiments in pixels and bits.">
+  <title data-en="Álisson Santana · Ideas in code">Álisson Santana · Ideias em código</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="language.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress"></span></div>
+  <a class="skip-link" href="#projetos"><span data-en="Skip to projects">Pular para os projetos</span></a>
+  <header class="site-header">
+    <div class="site-header-inner">
+    <a class="brand" href="#inicio" aria-label="Álisson Santana, início" data-en-label="Álisson Santana, home"><span class="brand-mark" aria-hidden="true">a<span>↗</span></span><span>álisson<span class="muted">.dev</span></span></a>
+    <nav aria-label="Navegação principal" data-en-label="Main navigation"><a href="#projetos"><span data-en="Projects">Projetos</span></a><a href="#sobre"><span data-en="About">Sobre</span></a><a href="#inventario"><span data-en="Tools">Ferramentas</span></a><a class="nav-contact" href="#contato"><span data-en="Let’s talk ">Vamos conversar </span><span aria-hidden="true">↗</span></a><button id="animation-toggle" class="animation-toggle" aria-pressed="false" aria-label="Pausar animações" data-en-label="Pause animations"><span aria-hidden="true">Ⅱ</span></button>
+      <div class="language-switch" role="group" aria-label="Idioma do site" data-en-label="Site language">
+        <button type="button" data-language="pt" lang="pt-BR" aria-label="Português" aria-pressed="true">PT</button>
+        <button type="button" data-language="en" lang="en" aria-label="English" aria-pressed="false">EN</button>
+      </div>
+    </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <canvas id="signal-field" aria-hidden="true"></canvas>
+      <div class="hero-code code-left" aria-hidden="true">01000001<br>01010011<br><span>const curiosity = true;</span></div>
+      <div class="hero-code code-right" aria-hidden="true">{ create(); }<br>00110001<br><span>while (curious) learn();</span></div>
+      <div class="hero-copy wrap">
+        <p class="eyebrow"><span class="tiny-square"></span><span data-en=" ÁLISSON SANTANA / COMPUTER ENGINEERING"> ÁLISSON SANTANA / ENGENHARIA DE COMPUTAÇÃO</span></p>
+        <h1 id="hero-title"><span><span data-en="Ideas in code.">Ideias em código.</span></span><span><span data-en="Code in ">Código em </span><em><span data-en="motion.">movimento.</span></em><span class="cursor" aria-hidden="true">_</span></span></h1>
+        <p class="hero-description"><span data-en="Computer Engineering student at ">Estudante de Engenharia de Computação no </span><strong>IME</strong><span data-en=". I build web applications, automations and games. I enjoy taking an idea all the way to working code.">. Crio sistemas web, automações e jogos e gosto do caminho entre uma ideia e o código funcionando.</span></p>
+        <div class="hero-actions"><a class="button primary" href="#projetos"><span data-en="Explore projects ">Explorar projetos </span><span aria-hidden="true">↓</span></a><a class="text-link" href="#sobre"><span data-en="About me ">Conhecer minha história </span><span aria-hidden="true">↗</span></a></div>
+        <div class="signal-controls" role="group" aria-label="Mudar a composição de pixels" data-en-label="Change the pixel pattern"><button class="signal-mode" data-signal="0" aria-pressed="false"><span aria-hidden="true">01</span> Interfaces</button><button class="signal-mode active" data-signal="1" aria-pressed="true"><span aria-hidden="true">10</span><span data-en=" Systems"> Sistemas</span></button><button class="signal-mode" data-signal="2" aria-pressed="false"><span aria-hidden="true">11</span><span data-en=" Experiments"> Experimentos</span></button></div>
+        <p class="signal-caption" id="signal-caption" aria-live="polite">Sistemas, lógica e conexões entre bits.</p>
+      </div>
+      <div class="hero-bottom wrap"><span aria-hidden="true">01000011 01010010 01001001 01000001 01010010</span><a href="#projetos"><span data-en="KEEP EXPLORING ">CONTINUE EXPLORANDO </span><span aria-hidden="true">↓</span></a><span aria-hidden="true"><span data-en="RIO DE JANEIRO / BRAZIL">RIO DE JANEIRO / BR</span></span></div>
+    </section>
+    <div class="section-divider wrap"><span><span data-en="SOFTWARE WITH PURPOSE. ALWAYS CURIOUS.">SOFTWARE COM PROPÓSITO. CURIOSIDADE SEM FIM.</span></span><span aria-hidden="true">SCROLL TO EXPLORE ↓</span></div>
+    <section class="projects-section wrap" id="projetos" aria-labelledby="projects-title">
+      <div class="section-heading"><div><p class="eyebrow"><span data-en="01 / SELECTED PROJECTS">01 / PROJETOS SELECIONADOS</span></p><h2 id="projects-title"><span data-en="From curiosity">Da curiosidade</span><br><span data-en="to ">ao </span><em><span data-en="code.">código.</span></em></h2></div><p><span data-en="Problems I’ve worked on.">Alguns problemas que resolvi.</span><br><span data-en="Ideas I wanted to try.">Algumas coisas que quis experimentar.</span></p></div>
+      <div class="search-row"><label class="project-search"><span aria-hidden="true">⌕</span><input id="project-search" type="search" placeholder="Buscar projeto ou tecnologia…" data-en-placeholder="Search projects or technologies…" aria-label="Buscar projeto ou tecnologia" data-en-label="Search projects or technologies"><kbd aria-hidden="true">Ctrl K</kbd></label><span class="search-hint"><span data-en="Find something that interests you.">Encontre o que desperta sua curiosidade.</span></span></div>
+      <div class="project-controls"><div class="filters" role="group" aria-label="Filtrar projetos" data-en-label="Filter projects"><button class="filter active" data-filter="todos" aria-pressed="true"><span data-en="All">Todos</span></button><button class="filter" data-filter="automacao" aria-pressed="false"><span data-en="Automation">Automação</span></button><button class="filter" data-filter="web" aria-pressed="false">Web</button><button class="filter" data-filter="jogos" aria-pressed="false"><span data-en="Games">Jogos</span></button></div><span class="result-count" id="result-count" aria-live="polite">5 projetos</span></div>
+      <div class="project-grid">
+        <article class="project-card project-featured" data-category="web">
+          <div class="project-art art-engios" aria-hidden="true">
+            <div class="mini-terminal engios-preview">
+              <div class="terminal-head"><i></i><i></i><i></i><span>EngiOS</span></div>
+              <div class="terminal-body">
+                <div><span class="terminal-prompt">01</span><span data-en=" Inspection records"> Registros da vistoria</span></div>
+                <div><span class="terminal-prompt">10</span><span data-en=" Review findings"> Revisão dos achados</span></div>
+                <div class="terminal-success"><span class="terminal-prompt">11</span><span data-en=" Word report"> Laudo em Word</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-category"><span data-en="INSPECTIONS &amp; REPORTS · IN DEVELOPMENT">VISTORIAS E LAUDOS · EM DESENVOLVIMENTO</span></p>
+            <h3>EngiOS</h3>
+            <p><span data-en="An application that organizes inspection records and generates draft technical reports for engineers to review.">Um sistema para organizar registros de vistorias e gerar rascunhos de laudos técnicos para revisão do engenheiro.</span></p>
+            <ul class="tags" aria-label="Tecnologias" data-en-label="Technologies"><li>Next.js</li><li>TypeScript</li><li>Supabase</li></ul>
+            <div class="project-bottom">
+              <button class="detail-link" data-project="engios"><span data-en="Explore project ">Explorar projeto </span><span aria-hidden="true">↗</span></button>
+              <a href="https://engios.tech/" target="_blank" rel="noopener noreferrer" aria-label="Site oficial do EngiOS, abre em nova aba" data-en-label="Official EngiOS website, opens in a new tab"><span data-en="Official website ">Site oficial </span><span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card" data-category="automacao">
+          <div class="project-art art-data" aria-hidden="true"><div class="mini-terminal"><div class="terminal-head"><i></i><i></i><i></i><span>verificar_relatorio.py</span></div><div class="terminal-body"><span class="terminal-comment"><span data-en="# verify before trusting"># conferir antes de confiar</span></span><br><span class="terminal-prompt">&gt;</span> ler_csv()<br><span class="terminal-prompt">&gt;</span> validar_dados()<br><span class="terminal-prompt">&gt;</span> conferir_indicadores()<br><span class="terminal-success"><span data-en="✓ Decimal calculations">✓ cálculos com Decimal</span></span></div></div><span class="art-index">01</span></div>
+          <div class="project-info"><p class="project-category"><span data-en="DATA &amp; AUTOMATION">DADOS & AUTOMAÇÃO</span></p><h3><span data-en="Do the numbers add up?">O relatório confere?</span></h3><p><span data-en="A tool that checks reported metrics against the source CSV and flags discrepancies before approval.">Um verificador que cruza indicadores com o CSV de origem e aponta divergências antes da aprovação.</span></p><ul class="tags" aria-label="Tecnologias" data-en-label="Technologies"><li>Python</li><li>Decimal</li><li>unittest</li></ul><div class="project-bottom"><button class="detail-link" data-project="verificador"><span data-en="Explore project ">Explorar projeto </span><span aria-hidden="true">↗</span></button><a href="https://github.com/alisson94/verificador-relatorios-compras" target="_blank" rel="noopener noreferrer" aria-label="Código do verificador no GitHub, abre em nova aba" data-en-label="Report validator code on GitHub, opens in a new tab"><span data-en="Code ">Código </span><span aria-hidden="true">↗</span></a></div></div>
+        </article>
+        <article class="project-card" data-category="web">
+          <div class="project-art art-library" aria-hidden="true"><div class="shelf"><div class="shelf-books"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="shelf-base"></div><div class="shelf-books second-row"><i></i><i></i><i></i><i></i><i></i></div><div class="shelf-base"></div></div><span class="art-caption"><span data-en="PICK UP WHERE YOU LEFT OFF.">CONTINUE DE ONDE PAROU.</span></span><span class="art-index">02</span></div>
+          <div class="project-info"><p class="project-category"><span data-en="WEB DEVELOPMENT">DESENVOLVIMENTO WEB</span></p><h3><span data-en="One bookshelf, many worlds.">Uma estante, muitos mundos.</span></h3><p><span data-en="A personal manhwa catalog for tracking titles, covers, reading links and chapter progress.">Um catálogo pessoal de manhwas para organizar obras, capas, links de leitura e o progresso dos capítulos.</span></p><ul class="tags" aria-label="Tecnologias" data-en-label="Technologies"><li>Node.js</li><li>Express</li><li>MongoDB</li></ul><div class="project-bottom"><button class="detail-link" data-project="biblioteca"><span data-en="Explore project ">Explorar projeto </span><span aria-hidden="true">↗</span></button><a href="https://github.com/alisson94/biblioteca-manhwas" target="_blank" rel="noopener noreferrer" aria-label="Código da biblioteca no GitHub, abre em nova aba" data-en-label="Library code on GitHub, opens in a new tab"><span data-en="Code ">Código </span><span aria-hidden="true">↗</span></a></div></div>
+        </article>
+        <article class="project-card" data-category="automacao">
+          <div class="project-art art-monitor" aria-hidden="true"><div class="monitor-icon"><svg viewBox="0 0 280 120" fill="none"><path d="M0 100H280M0 60H280M0 20H280" stroke="#6194c1" stroke-opacity=".2"/><path d="M10 90H40V72H68V80H96V48H124V60H152V30H180V44H208V17H240V26H269" stroke="#89caff" stroke-width="5"/><path d="M0 45H280" stroke="#929aff" stroke-width="2" stroke-dasharray="6 6"/></svg><span class="alert-pixel">! → ✉</span></div><span class="art-caption"><span data-en="A THRESHOLD. A SIGNAL.">UM LIMITE. UM SINAL.</span></span><span class="art-index">03</span></div>
+          <div class="project-info"><p class="project-category"><span data-en="BACKEND &amp; INTEGRATIONS">BACKEND & INTEGRAÇÕES</span></p><h3><span data-en="Watching for the next signal.">De olho no próximo sinal.</span></h3><p><span data-en="A stock price monitor that queries an API and emails alerts when prices cross the configured thresholds.">Um monitor de cotações com consulta a API e alertas por e-mail quando o preço cruza os limites definidos.</span></p><ul class="tags" aria-label="Tecnologias" data-en-label="Technologies"><li>C# / .NET</li><li>HTTP</li><li>SMTP</li></ul><div class="project-bottom"><button class="detail-link" data-project="monitor"><span data-en="Explore project ">Explorar projeto </span><span aria-hidden="true">↗</span></button><a href="https://github.com/alisson94/desafio-asset-monitor" target="_blank" rel="noopener noreferrer" aria-label="Código do monitor no GitHub, abre em nova aba" data-en-label="Stock monitor code on GitHub, opens in a new tab"><span data-en="Code ">Código </span><span aria-hidden="true">↗</span></a></div></div>
+        </article>
+        <article class="project-card" data-category="jogos">
+          <div class="project-art art-game" aria-hidden="true"><div class="tank tank-one"><i></i></div><div class="tank tank-two"><i></i></div><span class="projectile"></span><div class="arena-block block-one"></div><div class="arena-block block-two"></div><span class="art-caption">PLAYER 01 ↔ PLAYER 02</span><span class="art-index">04</span></div>
+          <div class="project-info"><p class="project-category"><span data-en="GAMES &amp; REAL-TIME SYSTEMS">JOGOS & TEMPO REAL</span></p><h3><span data-en="Better with another player.">Melhor com outro player.</span></h3><p><span data-en="A browser-based tank game for experimenting with events, movement and real-time communication.">Um experimento de jogo de tanques no navegador para explorar eventos, movimento e comunicação em tempo real.</span></p><ul class="tags" aria-label="Tecnologias" data-en-label="Technologies"><li>JavaScript</li><li>Socket.IO</li><li>Node.js</li></ul><div class="project-bottom"><button class="detail-link" data-project="tank"><span data-en="Explore project ">Explorar projeto </span><span aria-hidden="true">↗</span></button><a href="https://github.com/alisson94/tankGameMultiplayer" target="_blank" rel="noopener noreferrer" aria-label="Código do jogo de tanques no GitHub, abre em nova aba" data-en-label="Tank game code on GitHub, opens in a new tab"><span data-en="Code ">Código </span><span aria-hidden="true">↗</span></a></div></div>
+        </article>
+      </div>
+      <div class="empty-state" id="empty-state" hidden><span aria-hidden="true">[ 0 ]</span><h3><span data-en="No matching projects.">Nenhum projeto por aqui.</span></h3><p><span data-en="Try a different technology or clear the filters.">Tente outra tecnologia ou limpe os filtros.</span></p><button class="button secondary" id="clear-search"><span data-en="Show all projects ↗">Mostrar todos os projetos ↗</span></button></div>
+      <a class="all-repos" href="https://github.com/alisson94?tab=repositories" target="_blank" rel="noopener noreferrer"><span data-en="More experiments on GitHub ">Outros experimentos vivem no GitHub </span><span aria-hidden="true">↗</span></a>
+    </section>
+    <section class="about-section" id="sobre" aria-labelledby="about-title"><div class="wrap about-grid"><div class="about-copy"><p class="eyebrow"><span data-en="10 / THE PERSON BEHIND THE CODE">10 / QUEM ESTÁ POR TRÁS DO CÓDIGO</span></p><h2 id="about-title"><span data-en="Curious by nature.">Curioso por natureza.</span><br><em><span data-en="Engineer in training.">Engenheiro em formação.</span></em></h2><p><span data-en="I’m Álisson, a Computer Engineering student at Instituto Militar de Engenharia in Rio de Janeiro. I enjoy building useful tools and understanding how they work under the hood.">Sou o Álisson, estudante de Engenharia de Computação no Instituto Militar de Engenharia, no Rio de Janeiro. Meu interesse por software passa por construir ferramentas úteis e entender o que acontece por baixo delas.</span></p><p><span data-en="I’ve worked on internal systems, AI chatbots, Python research and robot soccer. My personal projects give me room to try ideas in games and web applications.">Já trabalhei com sistemas internos, chatbots com IA, pesquisa em Python e futebol de robôs. Nos projetos pessoais, encontro espaço para testar ideias com jogos e aplicações web.</span></p></div><div class="journey"><p class="journey-label"><span data-en="EXPERIENCE">CONEXÕES NA MINHA TRAJETÓRIA</span></p><article><span class="journey-symbol" aria-hidden="true">⌘</span><div><p class="journey-type"><span data-en="SOFTWARE DEVELOPMENT">DESENVOLVIMENTO</span></p><h3>Venda Tech IA</h3><p><span data-en="Internal tools and CRM with React, Next.js and TypeScript. Chatbot workflows using n8n, WhatsApp APIs and Supabase.">Sistemas internos e CRM com React, Next.js e TypeScript. Fluxos de chatbots com n8n, APIs do WhatsApp e Supabase.</span></p></div></article><article><span class="journey-symbol" aria-hidden="true">⌁</span><div><p class="journey-type"><span data-en="UNDERGRADUATE RESEARCH">INICIAÇÃO CIENTÍFICA</span></p><h3>Speedupy · IME</h3><p><span data-en="Python scripts to run tests, compare execution times and organize results from scientific software.">Scripts em Python para executar testes, comparar tempos de execução e organizar resultados de programas científicos.</span></p></div></article><article><span class="journey-symbol" aria-hidden="true">⚑</span><div><p class="journey-type"><span data-en="ROBOTICS &amp; LEADERSHIP">ROBÓTICA & LIDERANÇA</span></p><h3>RoboIME · Small Size League</h3><p><span data-en="Defensive logic in LabVIEW, leadership of the programming team and participation in robot soccer competitions.">Lógica de defesa em LabVIEW, liderança da equipe de programação e participação em competições de futebol de robôs.</span></p></div></article></div></div></section>
+    <section class="inventory-section wrap" id="inventario" aria-labelledby="inventory-title"><div class="section-heading"><div><p class="eyebrow"><span data-en="11 / TOOLS &amp; HOW I USE THEM">11 / FERRAMENTAS & CONEXÕES</span></p><h2 id="inventory-title"><span data-en="Every idea needs">Cada ideia pede</span><br><span data-en="the right ">uma </span><em><span data-en="tool.">ferramenta.</span></em></h2></div><p><span data-en="Select a technology to see">Explore as tecnologias para descobrir</span><br><span data-en="where I’ve used it.">onde elas aparecem no meu trabalho.</span></p></div><div class="inventory-grid"><article><span class="inventory-number">[01]</span><h3>Interfaces & web</h3><div class="skill-chips"><button data-skill="TypeScript">TypeScript</button><button data-skill="JavaScript">JavaScript</button><button data-skill="React">React</button><button data-skill="Next.js">Next.js</button><button data-skill="Node.js">Node.js</button></div></article><article><span class="inventory-number">[10]</span><h3><span data-en="Logic &amp; data">Lógica & dados</span></h3><div class="skill-chips"><button data-skill="Python">Python</button><button data-skill="Java">Java</button><button data-skill="PHP">PHP</button><button data-skill="C#">C#</button><button data-skill="SQL">SQL</button><button data-skill="MySQL">MySQL</button><button data-skill="MongoDB">MongoDB</button><button data-skill="Supabase">Supabase</button></div></article><article><span class="inventory-number">[11]</span><h3><span data-en="Integrations &amp; tools">Conexões & ferramentas</span></h3><div class="skill-chips"><button data-skill="n8n">n8n</button><button data-skill="APIs">APIs</button><button data-skill="Git">Git</button><button data-skill="Docker">Docker</button><button data-skill="C++">C++</button><button data-skill="LabVIEW">LabVIEW</button></div></article></div><div class="skill-inspector" id="skill-inspector" aria-live="polite"><span class="inspector-bit" aria-hidden="true">01</span><div><strong id="skill-title">Escolha uma tecnologia.</strong><p id="skill-description">Clique em uma ferramenta para explorar suas conexões com projetos e experiências.</p><div id="skill-links"></div></div></div></section>
+    <section class="contact-section wrap" id="contato" aria-labelledby="contact-title">
+      <div class="contact-copy"><div class="contact-star" aria-hidden="true">✦</div><p class="eyebrow"><span data-en="100 / GET IN TOUCH">100 / A PRÓXIMA CONEXÃO</span></p><h2 id="contact-title"><span data-en="Good ideas start">Uma boa ideia começa</span><br><span data-en="with a ">com uma </span><em><span data-en="conversation.">conversa.</span></em></h2><p><span data-en="An opportunity, a project or a chat about technology.">Uma oportunidade, um projeto ou uma troca sobre tecnologia.</span><br><span data-en="Let’s see what we can build together.">Vamos descobrir o que podemos construir juntos.</span></p><div class="contact-actions"><a class="button primary" href="https://www.linkedin.com/in/alisson-nunes-santana/" target="_blank" rel="noopener noreferrer"><span data-en="Connect on LinkedIn ">Conversar no LinkedIn </span><span aria-hidden="true">↗</span></a><a class="button secondary" href="https://github.com/alisson94" target="_blank" rel="noopener noreferrer"><span data-en="Visit GitHub ">Visitar GitHub </span><span aria-hidden="true">↗</span></a><button class="copy-link" id="copy-contact"><span data-en="Copy LinkedIn link ">Copiar LinkedIn </span><span aria-hidden="true">⧉</span></button></div><p class="copy-status" id="copy-status" role="status"></p></div>
+      <div class="contact-snowman" aria-hidden="true">
+        <div class="tree-snow">
+          <i style="--x:4%;--duration:10s;--delay:-2s">+</i>
+          <i style="--x:13%;--duration:14s;--delay:-9s">.</i>
+          <i style="--x:25%;--duration:11s;--delay:-5s">*</i>
+          <i style="--x:38%;--duration:13s;--delay:-8s">.</i>
+          <i style="--x:64%;--duration:9s;--delay:-3s">+</i>
+          <i style="--x:76%;--duration:14s;--delay:-11s">*</i>
+          <i style="--x:87%;--duration:10s;--delay:-6s">.</i>
+          <i style="--x:96%;--duration:12s;--delay:-5s">+</i>
+        </div>
+        <pre class="ascii-snowman"><span class="snowman-body"><span class="snowman-hat">            _______
+           /_______\
+           |       |
+           |<span class="snowman-ribbon">=======</span>|
+         __|_______|__
+        (_____________)</span>
+          /         \
+         |  <span class="snowman-eye">o</span>     <span class="snowman-eye">o</span>  |
+         |     <span class="snowman-nose">&gt;</span>     |
+          \  \___/  /
+          <span class="snowman-scarf">[=========]</span>
+ <span class="snowman-arm snowman-wave">\_/\___</span>/ <span class="snowman-scarf">|||</span>      \___<span class="snowman-arm">_/\/</span>
+        /  <span class="snowman-scarf">|||</span>  <span class="snowman-buttons">o</span>   \
+       |    <span class="snowman-scarf">~</span>        |
+       |        <span class="snowman-buttons">o</span>    |
+        \           /
+      .-'-----------'-.
+     /                 \
+    |         <span class="snowman-buttons">o</span>         |
+    |         <span class="snowman-buttons">o</span>         |
+     \                 /
+      '---------------'</span>
+<span class="snowman-shadow">   ._._._._._._._._._._._.</span></pre>
+      </div>
+      <div class="contact-tree" aria-hidden="true">
+        <div class="tree-snow"><i style="--x:3%;--duration:8s;--delay:-2s">.</i><i style="--x:9%;--duration:12s;--delay:-8s">+</i><i style="--x:15%;--duration:10s;--delay:-3s">*</i><i style="--x:22%;--duration:15s;--delay:-10s">.</i><i style="--x:29%;--duration:9s;--delay:-5s">+</i><i style="--x:38%;--duration:13s;--delay:-7s">*</i><i style="--x:51%;--duration:12s;--delay:-4s">.</i><i style="--x:61%;--duration:10s;--delay:-6s">+</i><i style="--x:69%;--duration:15s;--delay:-1s">*</i><i style="--x:77%;--duration:11s;--delay:-8s">.</i><i style="--x:85%;--duration:13s;--delay:-6s">+</i><i style="--x:92%;--duration:9s;--delay:-4s">*</i><i style="--x:97%;--duration:14s;--delay:-10s">.</i></div>
+        <pre class="ascii-tree"><span class="tree-crown"><span class="tree-star">               *</span>
+<span class="tree-star">              \|/</span>
+<span class="tree-star">              -+-</span>
+               ^
+              /^<span class="tree-light tree-gold" style="--delay:0.0s">+</span>\
+            /<span class="tree-shade">v</span><span class="tree-needle">.</span>^<span class="tree-shade">:</span>^\
+           /^<span class="tree-needle">.</span><span class="tree-shade">:</span><span class="tree-shade">v</span><span class="tree-needle">.</span>^<span class="tree-shade">:</span>^\
+          /<span class="tree-shade">v</span><span class="tree-needle">.</span><span class="tree-needle">.</span><span class="tree-light tree-blue" style="--delay:-0.31s">o</span><span class="tree-needle">.</span>^<span class="tree-needle">.</span><span class="tree-shade">v</span><span class="tree-needle">.</span><span class="tree-needle">.</span>\
+         /__<span class="tree-garland">~</span><span class="tree-garland">~</span><span class="tree-garland">~</span><span class="tree-garland">~</span><span class="tree-garland">~</span>____\
+          /^^<span class="tree-shade">:</span><span class="tree-shade">v</span><span class="tree-light tree-red" style="--delay:-0.62s">*</span><span class="tree-needle">.</span>^<span class="tree-shade">:</span>^^\
+         /<span class="tree-shade">v</span><span class="tree-needle">.</span>^^<span class="tree-shade">:</span><span class="tree-shade">v</span><span class="tree-needle">.</span><span class="tree-light tree-gold" style="--delay:-0.93s">o</span><span class="tree-needle">.</span><span class="tree-shade">:</span>^^\
+        /^<span class="tree-light tree-blue" style="--delay:-1.24s">o</span><span class="tree-needle">.</span><span class="tree-garland">~</span>^<span class="tree-shade">:</span><span class="tree-shade">v</span><span class="tree-needle">.</span>^^<span class="tree-shade">:</span><span class="tree-shade">v</span><span class="tree-needle">.</span>^\
+       /<span class="tree-shade">v</span><span class="tree-needle">.</span>^^<span class="tree-shade">:</span><span class="tree-garland">~</span><span class="tree-garland">~</span><span class="tree-garland">~</span><span class="tree-needle">.</span><span class="tree-shade">v</span><span class="tree-needle">.</span>^<span class="tree-light tree-red" style="--delay:-1.55s">o</span><span class="tree-needle">.</span>^<span class="tree-shade">:</span>\
+      /____<span class="tree-light tree-gold" style="--delay:-1.86s">o</span>___<span class="tree-garland">~</span><span class="tree-garland">~</span><span class="tree-garland">~</span><span class="tree-garland">~</span>_____\
+      /^^<span class="tree-needle">.</span><span class="tree-shade">v</span><span class="tree-shade">:</span><span class="tree-light tree-blue" style="--delay:-2.17s">o</span><span class="tree-needle">.</span>^<span class="tree-needle">.</span><span class="tree-shade">v</span><span class="tree-needle">.</span>^^<span class="tree-shade">:</span><span class="tree-shade">v</span><span class="tree-needle">.</span><span class="tree-light tree-red" style="--delay:-2.48s">*</span>\
+     /<span class="tree-shade">v</span><span class="tree-shade">:</span>^<span class="tree-needle">.</span><span class="tree-garland">~</span><span class="tree-garland">~</span><span class="tree-needle">.</span><span class="tree-shade">v</span><span class="tree-needle">.</span>^^<span class="tree-light tree-gold" style="--delay:-2.79s">o</span><span class="tree-needle">.</span>^^<span class="tree-shade">:</span><span class="tree-shade">v</span><span class="tree-needle">.</span>^\
+    /^<span class="tree-light tree-blue" style="--delay:-3.1s">o</span><span class="tree-shade">:</span><span class="tree-needle">.</span><span class="tree-shade">v</span><span class="tree-needle">.</span><span class="tree-garland">~</span><span class="tree-garland">~</span>^<span class="tree-shade">:</span><span class="tree-needle">.</span><span class="tree-shade">v</span><span class="tree-needle">.</span><span class="tree-light tree-red" style="--delay:-3.41s">*</span><span class="tree-needle">.</span>^<span class="tree-needle">.</span><span class="tree-shade">v</span><span class="tree-needle">.</span>^<span class="tree-shade">:</span>\
+   /<span class="tree-shade">v</span><span class="tree-needle">.</span>^^<span class="tree-shade">:</span><span class="tree-light tree-gold" style="--delay:-0.02s">o</span><span class="tree-needle">.</span>^<span class="tree-needle">.</span><span class="tree-garland">~</span><span class="tree-garland">~</span><span class="tree-garland">~</span><span class="tree-needle">.</span>^<span class="tree-shade">:</span><span class="tree-shade">v</span><span class="tree-needle">.</span>^^<span class="tree-light tree-blue" style="--delay:-0.33s">o</span><span class="tree-needle">.</span><span class="tree-shade">v</span><span class="tree-needle">.</span>\
+  /^<span class="tree-needle">.</span><span class="tree-light tree-red" style="--delay:-0.64s">*</span><span class="tree-shade">v</span><span class="tree-needle">.</span>^<span class="tree-shade">:</span><span class="tree-shade">v</span><span class="tree-needle">.</span>^^<span class="tree-needle">.</span><span class="tree-garland">~</span><span class="tree-garland">~</span><span class="tree-garland">~</span><span class="tree-needle">.</span><span class="tree-shade">v</span><span class="tree-needle">.</span>^<span class="tree-shade">:</span><span class="tree-shade">v</span><span class="tree-needle">.</span>^^<span class="tree-needle">.</span>\
+  /______<span class="tree-light tree-gold" style="--delay:-0.95s">o</span>_______<span class="tree-light tree-blue" style="--delay:-1.26s">*</span>__<span class="tree-garland">~</span><span class="tree-garland">~</span><span class="tree-garland">~</span><span class="tree-garland">~</span><span class="tree-garland">~</span>____\</span>
+<span class="tree-base">             |::|
+       _+_   |::|   __+__
+      [+:+]  |__|  [++:++]
+      [___]        [_____]
+    . . . . . . . . . . . .</span></pre>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><a class="brand" href="#inicio">álisson<span class="muted">.dev</span></a><p><span data-en="Built with code, curiosity and a few pixels.">Feito de código, curiosidade e alguns pixels.</span></p><a href="#inicio"><span data-en="Back to top ↑">Voltar ao início ↑</span></a></footer>
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-content"><button class="dialog-close" aria-label="Fechar detalhes do projeto" data-en-label="Close project details">×</button><p class="eyebrow" id="dialog-category"></p><h2 id="dialog-title"></h2><p class="dialog-lead" id="dialog-description"></p><h3><span data-en="The problem">O problema</span></h3><p id="dialog-problem"></p><h3><span data-en="How it works">A construção</span></h3><p id="dialog-solution"></p><h3 id="dialog-more-title">Explore no código</h3><p id="dialog-code"></p><p class="dialog-disclosure" id="dialog-disclosure" hidden></p><a class="button primary" id="dialog-repo" target="_blank" rel="noopener noreferrer"><span id="dialog-link-label">Abrir repositório</span> <span aria-hidden="true">↗</span></a></div></dialog>
+</body>
+</html>
